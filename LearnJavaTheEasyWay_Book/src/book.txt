@@ -3,6 +3,6 @@ The book that I am using for this section of learning is titled
 
 Currently on;
 
-Textbook Page: 33
-PDF Page: 57
-Section: Chapter 2
+Textbook Page: 39
+PDF Page: 63
+Section: Programming Challenges
