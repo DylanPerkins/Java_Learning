@@ -13,6 +13,7 @@ public class HiLo {
             // Create a random number for the user to guess and initilize a variable to hold their guess.
             int theNumber = (int) (Math.random() * 100 + 1);
             int userGuess = 0;
+            int numberOfTries = 0;
 
             while (userGuess != theNumber) {
                 // Asks user to make their input, then stores that input in userGuess.
@@ -20,12 +21,16 @@ public class HiLo {
                 userGuess = scan.nextInt();
 
                 if (userGuess < theNumber) {
+                    ++numberOfTries;
                     System.out.println(userGuess + " is too low. Please try again!");
                 } else if (userGuess > theNumber) {
+                    ++numberOfTries;
                     System.out.println(userGuess + " is too high. Please try again!");
                 } else if (userGuess == theNumber) {
                     System.out.println(userGuess + " was correct! Nice job!");
+                    System.out.println("This took you " + numberOfTries + " tries!");
                 } else {
+                    ++numberOfTries;
                     System.out.println("Silly goose, this input is invalid!");
                 }
             } // End of guessing loop.
