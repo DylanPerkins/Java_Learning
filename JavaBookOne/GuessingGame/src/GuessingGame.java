@@ -9,17 +9,22 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
+// Currently to play again you must click the button, pressing the 'Enter' key will just make your
+// guess again. Fix later maybe?
+
 public class GuessingGame extends JFrame {
 
     private static final long serialVersionUID = 1L;
     private JTextField userGuessField;
     private JLabel outputLabel;
+    private JButton guessButton;
+    private JButton playAgainButton;
     private int theNumber;
     private int counter = 0;
+    private String message = "";
 
     public void checkGuess() {
         String guessText = userGuessField.getText();
-        String message = "";
 
         try {
             int guess = Integer.parseInt(guessText);
@@ -33,8 +38,9 @@ public class GuessingGame extends JFrame {
             } else {
                 counter += 1;
                 message = guess + " is correct! You've won after " + counter + " tries! Let's Play again!";
-                newGame();
                 counter = 0;
+                guessButton.setVisible(false);
+                playAgainButton.setVisible(true);
             }
         } catch (Exception e) {
             message = "Enter a whole number between 1 and 100";
@@ -48,6 +54,8 @@ public class GuessingGame extends JFrame {
 
     public void newGame() {
         theNumber = (int) (Math.random() * 100 + 1);
+        guessButton.setVisible(true);
+        playAgainButton.setVisible(false);
     }
 
     public GuessingGame() {
@@ -78,7 +86,7 @@ public class GuessingGame extends JFrame {
         getContentPane().add(userGuessField);
         userGuessField.setColumns(10);
 
-        JButton guessButton = new JButton("Guess!");
+        guessButton = new JButton("Guess!");
         guessButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 checkGuess();
@@ -91,8 +99,21 @@ public class GuessingGame extends JFrame {
         outputLabel = new JLabel("Enter a number above, then click \"Guess!\"");
         outputLabel.setHorizontalAlignment(SwingConstants.CENTER);
         outputLabel.setFont(new Font("Times New Roman", Font.PLAIN, 13));
-        outputLabel.setBounds(89, 209, 242, 14);
+        outputLabel.setBounds(10, 209, 414, 14);
         getContentPane().add(outputLabel);
+
+        playAgainButton = new JButton("Play Again?");
+        playAgainButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                newGame();
+                message = "Enter a number above, then click \"Guess!\"";
+                outputLabel.setText(message);
+            }
+        });
+        playAgainButton.setVisible(false);
+        playAgainButton.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+        playAgainButton.setBounds(159, 148, 102, 23);
+        getContentPane().add(playAgainButton);
     }
 
     public static void main(String[] args) {
