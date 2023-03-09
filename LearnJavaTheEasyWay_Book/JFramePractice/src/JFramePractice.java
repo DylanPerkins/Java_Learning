@@ -1,5 +1,3 @@
-package JFrame_Practicing;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;

@@ -4,6 +4,7 @@
 /out/
 /out/*.txt
 
+
 # Compiled class file
 *.class
 

@@ -1,5 +1,3 @@
-package MadLibs;
-
 import java.util.Scanner;
 
 public class MadLibs {

@@ -1,5 +1,3 @@
-package HiLo_Game;
-
 import java.util.Scanner;
 
 public class HiLo {

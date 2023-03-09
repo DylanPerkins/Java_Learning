@@ -1,8 +1,0 @@
-The book that I am using for this section of learning is titled
-"Learn Java the Easy Way: A Hands-On Introduction to Programming" by Bryson Payne
-
-Currently on;
-
-Textbook Page: 50
-PDF Page: 74
-Section: GUI Design

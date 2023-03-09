@@ -1,4 +1,0 @@
-import javax.swing.JFrame;
-JFrame myFrame = new JFrame("Hello");
-myFrame.setSize (300,200)
-myFrame.setVisible(true)
