@@ -1,3 +1,8 @@
+# Files #
+#########
+/.metadata/
+/.sonarlint/
+
 # Log file #
 ############
 *.log
@@ -24,7 +29,7 @@ hs_err_pid*
 *.o
 *.so
 *.classpath
-.project
+*.project
 
 # Packages #
 ############
