@@ -4,10 +4,10 @@ import java.awt.event.*;
 
 public class JFramePractice extends JFrame {
 
-    private static JLabel directionsLabel = new JLabel("Enter your name in the box:");
-    private static JLabel outputLabel = new JLabel();
-    private static JTextField nameBox = new JTextField(25);
-    private static JButton nameButton = new JButton("Click me!");
+    private static final JLabel directionsLabel = new JLabel("Enter your name in the box:");
+    private static final JLabel outputLabel = new JLabel();
+    private static final JTextField nameBox = new JTextField(25);
+    private static final JButton nameButton = new JButton("Click me!");
 
     public static void main(String[] args) {
 
@@ -22,7 +22,7 @@ public class JFramePractice extends JFrame {
         window.getContentPane().setBackground(new Color(200, 0, 200));
         nameBox.setForeground(new Color(100, 0, 100));
 
-        directionsLabel.setFont(new Font("Calibri", Font.ITALIC, 18));
+        directionsLabel.setFont(new Font("Calibre", Font.ITALIC, 18));
 
         window.getContentPane().add(directionsLabel);
         window.getContentPane().add(nameBox);
@@ -32,11 +32,8 @@ public class JFramePractice extends JFrame {
         window.getContentPane().add(outputLabel);
 
         // Add an action listener
-        nameButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                buttonClick(e); // Function that handles the event
-            }
-        });
+        // Function that handles the event
+        nameButton.addActionListener(JFramePractice::buttonClick);
 
         // add swing objects here
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
