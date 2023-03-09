@@ -15,20 +15,26 @@ public class GuessingGame extends JFrame {
     private JTextField userGuessField;
     private JLabel outputLabel;
     private int theNumber;
+    private int counter = 0;
 
     public void checkGuess() {
         String guessText = userGuessField.getText();
         String message = "";
+
         try {
             int guess = Integer.parseInt(guessText);
 
-            if (guess < theNumber)
+            if (guess < theNumber) {
+                counter += 1;
                 message = guess + " is too low! Please try again.";
-            else if (guess > theNumber)
+            } else if (guess > theNumber) {
+                counter += 1;
                 message = guess + " is too high! Please try again.";
-            else {
-                message = guess + " is correct! You've won! Let's Play again!";
+            } else {
+                counter += 1;
+                message = guess + " is correct! You've won after " + counter + " tries! Let's Play again!";
                 newGame();
+                counter = 0;
             }
         } catch (Exception e) {
             message = "Enter a whole number between 1 and 100";
