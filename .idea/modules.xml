@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LearnJavaTheEasyWay_Book/GuessingGame/GuessingGame.iml" filepath="$PROJECT_DIR$/LearnJavaTheEasyWay_Book/GuessingGame/GuessingGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LearnJavaTheEasyWay_Book/HiLoGame/HiLoGame.iml" filepath="$PROJECT_DIR$/LearnJavaTheEasyWay_Book/HiLoGame/HiLoGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LearnJavaTheEasyWay_Book/JFramePractice/JFramePractice.iml" filepath="$PROJECT_DIR$/LearnJavaTheEasyWay_Book/JFramePractice/JFramePractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java_Learning.iml" filepath="$PROJECT_DIR$/.idea/Java_Learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LearnJavaTheEasyWay_Book/MadLibs/MadLibs.iml" filepath="$PROJECT_DIR$/LearnJavaTheEasyWay_Book/MadLibs/MadLibs.iml" />
+    </modules>
+  </component>
+</project>

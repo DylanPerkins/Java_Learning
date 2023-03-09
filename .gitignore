@@ -1,6 +1,7 @@
 # Log file #
 ############
 *.log
+*.iml
 
 # BlueJ files #
 ###############
