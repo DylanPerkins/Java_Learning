@@ -24,12 +24,9 @@ public class HiLo {
                 } else if (userGuess > theNumber) {
                     ++numberOfTries;
                     System.out.println(userGuess + " is too high. Please try again!");
-                } else if (userGuess == theNumber) {
+                } else {
                     System.out.println(userGuess + " was correct! Nice job!");
                     System.out.println("This took you " + numberOfTries + " tries!");
-                } else {
-                    ++numberOfTries;
-                    System.out.println("Silly goose, this input is invalid!");
                 }
             } // End of guessing loop.
 
