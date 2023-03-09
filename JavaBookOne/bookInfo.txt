@@ -3,6 +3,6 @@ The book that I am using for this section of learning is titled
 
 Currently on;
 
-Textbook Page: 50
-PDF Page: 74
+Textbook Page: 74
+PDF Page: 98
 Section: GUI Design
