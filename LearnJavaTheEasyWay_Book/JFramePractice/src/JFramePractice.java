@@ -4,7 +4,11 @@ import java.awt.event.*;
 
 public class JFramePractice extends JFrame {
 
-    private static final JLabel directionsLabel = new JLabel("Enter your name in the box:");
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private static final JLabel directionsLabel = new JLabel("Enter your name in the box:");
     private static final JLabel outputLabel = new JLabel();
     private static final JTextField nameBox = new JTextField(25);
     private static final JButton nameButton = new JButton("Click me!");
@@ -36,7 +40,7 @@ public class JFramePractice extends JFrame {
         nameButton.addActionListener(JFramePractice::buttonClick);
 
         // add swing objects here
-        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 
     public static void buttonClick(ActionEvent e) {
