@@ -1,0 +1,7 @@
+Title: Java Cookbook 2nd Edition
+Sub-Title: Solutions and Examples for Java Developers
+Author: Ian F. Darwin
+
+PDF Page Location: 1
+Book Page Location: 1
+Current Section: Preface
