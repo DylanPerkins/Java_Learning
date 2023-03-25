@@ -4,7 +4,7 @@
 /.sonarlint/
 /.idea/
 /bin/
-*/temp/*
+/temp/
 
 # Log file #
 ############
