@@ -2,6 +2,9 @@
 #########
 /.metadata/
 /.sonarlint/
+/.idea/
+/bin/
+*/temp/*
 
 # Log file #
 ############
